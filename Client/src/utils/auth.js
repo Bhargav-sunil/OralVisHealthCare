@@ -1,3 +1,24 @@
+// export function saveAuth(token, user) {
+//   localStorage.setItem("oralvis_token", token);
+//   localStorage.setItem("oralvis_user", JSON.stringify(user));
+// }
+
+// export function getAuth() {
+//   const token = localStorage.getItem("oralvis_token");
+//   const user = JSON.parse(localStorage.getItem("oralvis_user") || "null");
+//   return { token, user };
+// }
+
+// export function logout() {
+//   localStorage.removeItem("oralvis_token");
+//   localStorage.removeItem("oralvis_user");
+//   window.location.href = "/login";
+// }
+
+// auth.js
+
+import { useNavigate } from "react-router-dom";
+
 export function saveAuth(token, user) {
   localStorage.setItem("oralvis_token", token);
   localStorage.setItem("oralvis_user", JSON.stringify(user));
@@ -9,8 +30,13 @@ export function getAuth() {
   return { token, user };
 }
 
-export function logout() {
-  localStorage.removeItem("oralvis_token");
-  localStorage.removeItem("oralvis_user");
-  window.location.href = "/login";
+export function useLogout() {
+  const navigate = useNavigate();
+
+  return () => {
+    localStorage.removeItem("oralvis_token");
+    localStorage.removeItem("oralvis_user");
+    navigate("/login"); 
+  };
 }
+
