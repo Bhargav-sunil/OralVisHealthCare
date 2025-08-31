@@ -6,9 +6,10 @@ dotenv.config();
 
 const app = express();
 
-const allowedOrigin = https://oral-vis-health-care.vercel.app || "*";
-app.use(cors({ origin: allowedOrigin, credentials: true }));
+// const allowedOrigin = https://oral-vis-health-care.vercel.app || "*";
+// app.use(cors({ origin: allowedOrigin, credentials: true }));
 
+app.use(cors())
 app.use(express.json());
 
 require("./config/database");
