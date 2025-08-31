@@ -6,7 +6,7 @@ dotenv.config();
 
 const app = express();
 
-const allowedOrigin = process.env.FRONTEND_URL || "*";
+const allowedOrigin = https://oral-vis-health-care.vercel.app || "*";
 app.use(cors({ origin: allowedOrigin, credentials: true }));
 
 app.use(express.json());
