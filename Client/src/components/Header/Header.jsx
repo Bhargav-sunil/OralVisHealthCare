@@ -1,10 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
-import { getAuth, logout } from "../../utils/auth";
+import { getAuth, useLogout } from "../../utils/auth";
 import "./Header.css";
 
 const Header = () => {
   const { user } = getAuth();
   const navigate = useNavigate();
+  const logout = useLogout();
 
   return (
     <header className="header">
@@ -24,7 +25,7 @@ const Header = () => {
                 Signed in as <span>{user.email}</span>
               </div>
               <button
-                onClick={() => logout()}
+                onClick={logout}
                 className="btn btn-primary"
                 aria-label="Log out"
               >
