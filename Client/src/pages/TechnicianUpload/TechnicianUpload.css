@@ -1,0 +1,151 @@
+.tech-upload-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.tech-upload-wrapper {
+  width: 100%;
+  max-width: 700px;
+}
+
+.tech-upload-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.tech-upload-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.tech-upload-subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tech-upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-select {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.form-select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.form-select.disabled {
+  background: #f3f4f6;
+  cursor: not-allowed;
+  color: #9ca3af;
+}
+
+.file-input {
+  padding: 0.4rem;
+  border: 1px dashed #9ca3af;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  background: #f9fafb;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.file-input:hover {
+  background: #f3f4f6;
+  border-color: #2563eb;
+}
+
+.file-selected {
+  font-size: 0.85rem;
+  color: #2563eb;
+  margin-top: 0.3rem;
+}
+
+.alert {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.alert-success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #34d399;
+}
+
+.alert-error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #f87171;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.link-button:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .tech-upload-card {
+    padding: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .link-button {
+    text-align: center;
+  }
+}

@@ -1,0 +1,111 @@
+.header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  background: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.brand-text {
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.brand-sub {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-info {
+  display: none;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.user-info span {
+  font-weight: 500;
+  color: #111827;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.4);
+}
+
+.btn-primary {
+  background: #10b981;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #059669;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #10b981;
+  color: #10b981;
+}
+
+.btn-outline:hover {
+  background: #10b981;
+  color: #fff;
+}
+
+@media (min-width: 640px) {
+  .user-info {
+    display: block;
+  }
+}
