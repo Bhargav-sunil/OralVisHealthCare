@@ -4,7 +4,7 @@ A full-stack healthcare web application built for **OralVis Healthcare**.
 The platform enables **Technicians** to upload patient scan images and details, while **Dentists** can securely view scans and generate downloadable PDF reports.
 
 ---
-# Live Link: https://oral-vis-health-care-6h3fwdm19-bhargav-sunils-projects.vercel.app
+** Live Link: ** https://oral-vis-health-care-6h3fwdm19-bhargav-sunils-projects.vercel.app
 ##  Features
 
 ###  Authentication & Roles
@@ -13,7 +13,7 @@ The platform enables **Technicians** to upload patient scan images and details, 
   - **Technician** → can upload scans
   - **Dentist** → can view scans
 
-### 👩‍⚕ Technician Features
+###  Technician Features
 - Upload patient scan images with:
   - Patient Name & ID
   - Scan Type (RGB)
@@ -53,5 +53,6 @@ The platform enables **Technicians** to upload patient scan images and details, 
 - **Axios** for API requests
 - **CSS (responsive, modern healthcare theme)**
 - Hosted on  **Vercel**
+
 
 
